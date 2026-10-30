@@ -1,0 +1,8 @@
+dependencies:
+  espressif/esp-tflite-micro:
+    version: "==1.4.1"
+    override_path: "../local_components/esp-tflite-micro"
+
+  espressif/esp-nn:
+    version: "==1.4.2"
+    override_path: "../local_components/esp-nn"

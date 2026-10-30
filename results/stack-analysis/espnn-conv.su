@@ -1,0 +1,4 @@
+/home/moon3fire/Desktop/esp32-cnn-benchmark-github-ready/esp32-cnn-benchmark/firmware/local_components/esp-nn/src/convolution/esp_nn_conv_opt.c:34:13:esp_nn_conv_s8_1x1.isra	144	static
+/home/moon3fire/Desktop/esp32-cnn-benchmark-github-ready/esp32-cnn-benchmark/firmware/local_components/esp-nn/src/convolution/esp_nn_conv_opt.c:20:5:esp_nn_get_conv_scratch_size_opt	32	static
+/home/moon3fire/Desktop/esp32-cnn-benchmark-github-ready/esp32-cnn-benchmark/firmware/local_components/esp-nn/src/convolution/esp_nn_conv_opt.c:28:6:esp_nn_set_conv_scratch_buf_opt	32	static
+/home/moon3fire/Desktop/esp32-cnn-benchmark-github-ready/esp32-cnn-benchmark/firmware/local_components/esp-nn/src/convolution/esp_nn_conv_opt.c:95:6:esp_nn_conv_s8_opt	256	static

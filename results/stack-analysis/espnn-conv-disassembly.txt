@@ -1,0 +1,798 @@
+
+build/esp-idf/esp-nn/CMakeFiles/__idf_esp-nn.dir/src/convolution/esp_nn_conv_opt.c.obj:     file format elf32-xtensa-le
+
+
+Disassembly of section .literal.esp_nn_conv_s8_1x1$isra$0:
+
+00000000 <.literal.esp_nn_conv_s8_1x1$isra$0>:
+   0:	7fffffff 	
+   4:	80000000 	
+   8:	c0000001 	
+   c:	40000000 	
+
+Disassembly of section .literal.esp_nn_conv_s8_opt:
+
+00000000 <.literal.esp_nn_conv_s8_opt>:
+   0:	7fffffff 	
+   4:	80000000 	
+   8:	c0000001 	
+   c:	40000000 	
+	...
+	10: R_XTENSA_32	esp_nn_conv_s8_ansi
+	14: R_XTENSA_32	.text.esp_nn_conv_s8_1x1$isra$0
+
+Disassembly of section .text.esp_nn_conv_s8_1x1$isra$0:
+
+00000000 <esp_nn_conv_s8_1x1$isra$0>:
+   0:	012136        	entry	a1, 144
+   3:	252182        	l32i	a8, a1, 148
+   6:	0217a2        	l16ui	a10, a7, 4
+   9:	07cd      	mov.n	a12, a7
+   b:	061872        	l16ui	a7, a8, 12
+   e:	02fd      	mov.n	a15, a2
+  10:	822a70        	mull	a2, a10, a7
+  13:	126152        	s32i	a5, a1, 72
+  16:	5169      	s32i.n	a6, a1, 20
+  18:	2621a2        	l32i	a10, a1, 152
+  1b:	03dd      	mov.n	a13, a3
+  1d:	295216        	beqz	a2, 2b6 <esp_nn_conv_s8_1x1$isra$0+0x2b6>	1d: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_1x1$isra$0+0x2b6
+  20:	f49030        	extui	a9, a3, 0, 16
+  23:	fcc932        	addi	a3, a9, -4
+  26:	c16fd0        	mul16u	a6, a15, a13
+  29:	d4f2d0        	extui	a15, a13, 2, 14
+  2c:	cd7c      	movi.n	a13, -4
+  2e:	10d3d0        	and	a13, a3, a13
+  31:	5d4b      	addi.n	a5, a13, 4
+  33:	18d8      	l32i.n	a13, a8, 4
+  35:	0418e2        	l16ui	a14, a8, 8
+  38:	2199      	s32i.n	a9, a1, 8
+  3a:	61d9      	s32i.n	a13, a1, 24
+  3c:	0898      	l32i.n	a9, a8, 0
+  3e:	88d8      	l32i.n	a13, a8, 32
+  40:	9888      	l32i.n	a8, a8, 36
+  42:	e1e9      	s32i.n	a14, a1, 56
+  44:	71d9      	s32i.n	a13, a1, 28
+  46:	8189      	s32i.n	a8, a1, 32
+  48:	e1d8      	l32i.n	a13, a1, 56
+  4a:	2188      	l32i.n	a8, a1, 8
+  4c:	001ce2        	l16ui	a14, a12, 0
+  4f:	11ffe0        	slli	a15, a15, 2
+  52:	c188d0        	mul16u	a8, a8, a13
+  55:	41f9      	s32i.n	a15, a1, 16
+  57:	82fed0        	mull	a15, a14, a13
+  5a:	041cd2        	l16ui	a13, a12, 8
+  5d:	41c8      	l32i.n	a12, a1, 16
+  5f:	116182        	s32i	a8, a1, 68
+  62:	180c      	movi.n	a8, 1
+  64:	838cc0        	moveqz	a8, a12, a12
+  67:	826670        	mull	a6, a6, a7
+  6a:	9189      	s32i.n	a8, a1, 36
+  6c:	480c      	movi.n	a8, 4
+  6e:	9385c0        	movnez	a8, a5, a12
+  71:	03bd      	mov.n	a11, a3
+  73:	065d      	mov.n	a5, a6
+  75:	a189      	s32i.n	a8, a1, 40
+  77:	0e0c      	movi.n	a14, 0
+  79:	076d      	mov.n	a6, a7
+  7b:	093d      	mov.n	a3, a9
+  7d:	008b46        	j	2ae <esp_nn_conv_s8_1x1$isra$0+0x2ae>	7d: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_1x1$isra$0+0x2ae
+  80:	00          	.byte	00
+  81:	0d8d      	mov.n	a8, a13
+  83:	1dbd16        	beqz	a13, 262 <esp_nn_conv_s8_1x1$isra$0+0x262>	83: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_1x1$isra$0+0x262
+  86:	2198      	l32i.n	a9, a1, 8
+  88:	080c      	movi.n	a8, 0
+  8a:	fdc992        	addi	a9, a9, -3
+  8d:	b199      	s32i.n	a9, a1, 44
+  8f:	4192b0        	srli	a9, a11, 2
+  92:	c199      	s32i.n	a9, a1, 48
+  94:	242192        	l32i	a9, a1, 144
+  97:	1149      	s32i.n	a4, a1, 4
+  99:	136152        	s32i	a5, a1, 76
+  9c:	146142        	s32i	a4, a1, 80
+  9f:	156122        	s32i	a2, a1, 84
+  a2:	166162        	s32i	a6, a1, 88
+  a5:	f1f9      	s32i.n	a15, a1, 60
+  a7:	1761e2        	s32i	a14, a1, 92
+  aa:	1861b2        	s32i	a11, a1, 96
+  ad:	1061d2        	s32i	a13, a1, 64
+  b0:	095d      	mov.n	a5, a9
+  b2:	102192        	l32i	a9, a1, 64
+  b5:	5128      	l32i.n	a2, a1, 20
+  b7:	959a      	add.n	a9, a5, a9
+  b9:	1a78      	l32i.n	a7, a10, 4
+  bb:	0a48      	l32i.n	a4, a10, 0
+  bd:	122162        	l32i	a6, a1, 72
+  c0:	3199      	s32i.n	a9, a1, 12
+  c2:	0129      	s32i.n	a2, a1, 0
+  c4:	d189      	s32i.n	a8, a1, 52
+  c6:	2661a2        	s32i	a10, a1, 152
+  c9:	0061c6        	j	254 <esp_nn_conv_s8_1x1$isra$0+0x254>	c9: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_1x1$isra$0+0x254
+  cc:	00          	.byte	00
+  cd:	00          	.byte	00
+  ce:	b188      	l32i.n	a8, a1, 44
+  d0:	11e8      	l32i.n	a14, a1, 4
+  d2:	f80b      	addi.n	a15, a8, -1
+  d4:	41f2f0        	srli	a15, a15, 2
+  d7:	983b      	addi.n	a9, a8, 3
+  d9:	06dd      	mov.n	a13, a6
+  db:	080c      	movi.n	a8, 0
+  dd:	ff1b      	addi.n	a15, a15, 1
+  df:	0249e6        	bgei	a9, 4, e5 <esp_nn_conv_s8_1x1$isra$0+0xe5>	df: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_1x1$isra$0+0xe5
+  e2:	01a0f2        	movi	a15, 1
+  e5:	4f8f76        	loop	a15, 138 <esp_nn_conv_s8_1x1$isra$0+0x138>	e5: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_1x1$isra$0+0x138
+  e8:	000ea2        	l8ui	a10, a14, 0
+  eb:	000dc2        	l8ui	a12, a13, 0
+  ee:	010e92        	l8ui	a9, a14, 1
+  f1:	23aa00        	sext	a10, a10, 7
+  f4:	010db2        	l8ui	a11, a13, 1
+  f7:	23cc00        	sext	a12, a12, 7
+  fa:	aa3a      	add.n	a10, a10, a3
+  fc:	82aac0        	mull	a10, a10, a12
+  ff:	239900        	sext	a9, a9, 7
+ 102:	030ec2        	l8ui	a12, a14, 3
+ 105:	020e22        	l8ui	a2, a14, 2
+ 108:	23bb00        	sext	a11, a11, 7
+ 10b:	993a      	add.n	a9, a9, a3
+ 10d:	8299b0        	mull	a9, a9, a11
+ 110:	23cc00        	sext	a12, a12, 7
+ 113:	020db2        	l8ui	a11, a13, 2
+ 116:	aa8a      	add.n	a10, a10, a8
+ 118:	232200        	sext	a2, a2, 7
+ 11b:	8c3a      	add.n	a8, a12, a3
+ 11d:	030dc2        	l8ui	a12, a13, 3
+ 120:	223a      	add.n	a2, a2, a3
+ 122:	23bb00        	sext	a11, a11, 7
+ 125:	82b2b0        	mull	a11, a2, a11
+ 128:	23cc00        	sext	a12, a12, 7
+ 12b:	8288c0        	mull	a8, a8, a12
+ 12e:	99aa      	add.n	a9, a9, a10
+ 130:	bb9a      	add.n	a11, a11, a9
+ 132:	88ba      	add.n	a8, a8, a11
+ 134:	ee4b      	addi.n	a14, a14, 4
+ 136:	dd4b      	addi.n	a13, a13, 4
+ 138:	c198      	l32i.n	a9, a1, 48
+ 13a:	91a8      	l32i.n	a10, a1, 36
+ 13c:	1199e0        	slli	a9, a9, 2
+ 13f:	0b0c      	movi.n	a11, 0
+ 141:	839ba0        	moveqz	a9, a11, a10
+ 144:	11a8      	l32i.n	a10, a1, 4
+ 146:	994b      	addi.n	a9, a9, 4
+ 148:	a1e8      	l32i.n	a14, a1, 40
+ 14a:	a9aa      	add.n	a10, a9, a10
+ 14c:	669a      	add.n	a6, a6, a9
+ 14e:	022192        	l32i	a9, a1, 8
+ 151:	29ae97        	bge	a14, a9, 17e <esp_nn_conv_s8_1x1$isra$0+0x17e>	151: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_1x1$isra$0+0x17e
+ 154:	da9a      	add.n	a13, a10, a9
+ 156:	c0dde0        	sub	a13, a13, a14
+ 159:	20c660        	or	a12, a6, a6
+ 15c:	000a92        	l8ui	a9, a10, 0
+ 15f:	000cb2        	l8ui	a11, a12, 0
+ 162:	239900        	sext	a9, a9, 7
+ 165:	993a      	add.n	a9, a9, a3
+ 167:	23bb00        	sext	a11, a11, 7
+ 16a:	8299b0        	mull	a9, a9, a11
+ 16d:	aa1b      	addi.n	a10, a10, 1
+ 16f:	889a      	add.n	a8, a8, a9
+ 171:	cc1b      	addi.n	a12, a12, 1
+ 173:	e59da7        	bne	a13, a10, 15c <esp_nn_conv_s8_1x1$isra$0+0x15c>	173: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_1x1$isra$0+0x15c
+ 176:	2198      	l32i.n	a9, a1, 8
+ 178:	806690        	add	a6, a6, a9
+ 17b:	c066e0        	sub	a6, a6, a14
+ 17e:	5198      	l32i.n	a9, a1, 20
+ 180:	698c      	beqz.n	a9, 18a <esp_nn_conv_s8_1x1$isra$0+0x18a>	180: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_1x1$isra$0+0x18a
+ 182:	0198      	l32i.n	a9, a1, 0
+ 184:	002992        	l32i	a9, a9, 0
+ 187:	808890        	add	a8, a8, a9
+ 18a:	0498      	l32i.n	a9, a4, 0
+ 18c:	020c      	movi.n	a2, 0
+ 18e:	07b8      	l32i.n	a11, a7, 0
+ 190:	53a920        	max	a10, a9, a2
+ 193:	401a00        	ssl	a10
+ 196:	a1a800        	sll	a10, a8
+ 199:	000081        	l32r	a8, fffc019c <esp_nn_conv_s8_1x1$isra$0+0xfffc019c>	199: R_XTENSA_SLOT0_OP	.literal.esp_nn_conv_s8_1x1$isra$0+0x4
+ 19c:	1d0c      	movi.n	a13, 1
+ 19e:	c0cba0        	sub	a12, a11, a10
+ 1a1:	02fd      	mov.n	a15, a2
+ 1a3:	83fdc0        	moveqz	a15, a13, a12
+ 1a6:	c08a80        	sub	a8, a10, a8
+ 1a9:	02cd      	mov.n	a12, a2
+ 1ab:	83cd80        	moveqz	a12, a13, a8
+ 1ae:	10cfc0        	and	a12, a15, a12
+ 1b1:	608090        	neg	a8, a9
+ 1b4:	0000f1        	l32r	a15, fffc01b4 <esp_nn_conv_s8_1x1$isra$0+0xfffc01b4>	1b4: R_XTENSA_SLOT0_OP	.literal.esp_nn_conv_s8_1x1$isra$0+0xc
+ 1b7:	000091        	l32r	a9, fffc01b8 <esp_nn_conv_s8_1x1$isra$0+0xfffc01b8>	1b7: R_XTENSA_SLOT0_OP	.literal.esp_nn_conv_s8_1x1$isra$0+0x8
+ 1ba:	30eba0        	xor	a14, a11, a10
+ 1bd:	fd7c      	movi.n	a13, -1
+ 1bf:	b39fe0        	movgez	a9, a15, a14
+ 1c2:	b3d2e0        	movgez	a13, a2, a14
+ 1c5:	538820        	max	a8, a8, a2
+ 1c8:	0000e1        	l32r	a14, fffc01c8 <esp_nn_conv_s8_1x1$isra$0+0xfffc01c8>	1c8: R_XTENSA_SLOT0_OP	.literal.esp_nn_conv_s8_1x1$isra$0
+ 1cb:	3cec      	bnez.n	a12, 1f2 <esp_nn_conv_s8_1x1$isra$0+0x1f2>	1cb: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_1x1$isra$0+0x1f2
+ 1cd:	82cab0        	mull	a12, a10, a11
+ 1d0:	b2eab0        	mulsh	a14, a10, a11
+ 1d3:	9c9a      	add.n	a9, a12, a9
+ 1d5:	eeda      	add.n	a14, a14, a13
+ 1d7:	02b9c7        	bgeu	a9, a12, 1dd <esp_nn_conv_s8_1x1$isra$0+0x1dd>	1d7: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_1x1$isra$0+0x1dd
+ 1da:	01cee2        	addi	a14, a14, 1
+ 1dd:	31afe0        	srai	a10, a14, 31
+ 1e0:	aaaa      	add.n	a10, a10, a10
+ 1e2:	41a1a0        	srli	a10, a10, 1
+ 1e5:	9a9a      	add.n	a9, a10, a9
+ 1e7:	01b9a7        	bgeu	a9, a10, 1ec <esp_nn_conv_s8_1x1$isra$0+0x1ec>	1e7: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_1x1$isra$0+0x1ec
+ 1ea:	ee1b      	addi.n	a14, a14, 1
+ 1ec:	404f10        	ssai	31
+ 1ef:	81ee90        	src	a14, a14, a9
+ 1f2:	190c      	movi.n	a9, 1
+ 1f4:	401800        	ssl	a8
+ 1f7:	a19900        	sll	a9, a9
+ 1fa:	990b      	addi.n	a9, a9, -1
+ 1fc:	21a190        	srai	a10, a9, 1
+ 1ff:	05bfe0        	extui	a11, a14, 31, 1
+ 202:	1099e0        	and	a9, a9, a14
+ 205:	aaba      	add.n	a10, a10, a11
+ 207:	400800        	ssr	a8
+ 20a:	b1e0e0        	sra	a14, a14
+ 20d:	01aa97        	bge	a10, a9, 212 <esp_nn_conv_s8_1x1$isra$0+0x212>	20d: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_1x1$isra$0+0x212
+ 210:	ee1b      	addi.n	a14, a14, 1
+ 212:	6188      	l32i.n	a8, a1, 24
+ 214:	774b      	addi.n	a7, a7, 4
+ 216:	e8ea      	add.n	a14, a8, a14
+ 218:	7188      	l32i.n	a8, a1, 28
+ 21a:	444b      	addi.n	a4, a4, 4
+ 21c:	53ee80        	max	a14, a14, a8
+ 21f:	8188      	l32i.n	a8, a1, 32
+ 221:	43ee80        	min	a14, a14, a8
+ 224:	0188      	l32i.n	a8, a1, 0
+ 226:	0045e2        	s8i	a14, a5, 0
+ 229:	884b      	addi.n	a8, a8, 4
+ 22b:	0189      	s32i.n	a8, a1, 0
+ 22d:	3188      	l32i.n	a8, a1, 12
+ 22f:	551b      	addi.n	a5, a5, 1
+ 231:	1f9857        	bne	a8, a5, 254 <esp_nn_conv_s8_1x1$isra$0+0x254>	231: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_1x1$isra$0+0x254
+ 234:	11b8      	l32i.n	a11, a1, 4
+ 236:	1121c2        	l32i	a12, a1, 68
+ 239:	e198      	l32i.n	a9, a1, 56
+ 23b:	bbca      	add.n	a11, a11, a12
+ 23d:	d188      	l32i.n	a8, a1, 52
+ 23f:	11b9      	s32i.n	a11, a1, 4
+ 241:	f1b8      	l32i.n	a11, a1, 60
+ 243:	889a      	add.n	a8, a8, a9
+ 245:	2621a2        	l32i	a10, a1, 152
+ 248:	3198      	l32i.n	a9, a1, 12
+ 24a:	02a8b7        	bge	a8, a11, 250 <esp_nn_conv_s8_1x1$isra$0+0x250>	24a: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_1x1$isra$0+0x250
+ 24d:	ff97c6        	j	b0 <esp_nn_conv_s8_1x1$isra$0+0xb0>	24d: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_1x1$isra$0+0xb0
+ 250:	000e46        	j	28d <esp_nn_conv_s8_1x1$isra$0+0x28d>	250: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_1x1$isra$0+0x28d
+ 253:	00          	.byte	00
+ 254:	4188      	l32i.n	a8, a1, 16
+ 256:	e74856        	bnez	a8, ce <esp_nn_conv_s8_1x1$isra$0+0xce>	256: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_1x1$isra$0+0xce
+ 259:	08ed      	mov.n	a14, a8
+ 25b:	11a8      	l32i.n	a10, a1, 4
+ 25d:	4188      	l32i.n	a8, a1, 16
+ 25f:	ffbac6        	j	14e <esp_nn_conv_s8_1x1$isra$0+0x14e>	25f: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_1x1$isra$0+0x14e
+ 262:	e1a8      	l32i.n	a10, a1, 56
+ 264:	067d      	mov.n	a7, a6
+ 266:	9a8a      	add.n	a9, a10, a8
+ 268:	89aa      	add.n	a8, a9, a10
+ 26a:	0229f7        	blt	a9, a15, 270 <esp_nn_conv_s8_1x1$isra$0+0x270>	26a: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_1x1$isra$0+0x270
+ 26d:	000486        	j	283 <esp_nn_conv_s8_1x1$isra$0+0x283>	26d: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_1x1$isra$0+0x283
+ 270:	f228f7        	blt	a8, a15, 266 <esp_nn_conv_s8_1x1$isra$0+0x266>	270: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_1x1$isra$0+0x266
+ 273:	000306        	j	283 <esp_nn_conv_s8_1x1$isra$0+0x283>	273: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_1x1$isra$0+0x283
+ 276:	87ea      	add.n	a8, a7, a14
+ 278:	e78a      	add.n	a14, a7, a8
+ 27a:	38a827        	bge	a8, a2, 2b6 <esp_nn_conv_s8_1x1$isra$0+0x2b6>	27a: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_1x1$isra$0+0x2b6
+ 27d:	f52e27        	blt	a14, a2, 276 <esp_nn_conv_s8_1x1$isra$0+0x276>	27d: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_1x1$isra$0+0x276
+ 280:	000c86        	j	2b6 <esp_nn_conv_s8_1x1$isra$0+0x2b6>	280: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_1x1$isra$0+0x2b6
+ 283:	ee7a      	add.n	a14, a14, a7
+ 285:	2dae27        	bge	a14, a2, 2b6 <esp_nn_conv_s8_1x1$isra$0+0x2b6>	285: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_1x1$isra$0+0x2b6
+ 288:	0d8d      	mov.n	a8, a13
+ 28a:	fff606        	j	266 <esp_nn_conv_s8_1x1$isra$0+0x266>	28a: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_1x1$isra$0+0x266
+ 28d:	162162        	l32i	a6, a1, 88
+ 290:	1721e2        	l32i	a14, a1, 92
+ 293:	132152        	l32i	a5, a1, 76
+ 296:	142142        	l32i	a4, a1, 80
+ 299:	152122        	l32i	a2, a1, 84
+ 29c:	246192        	s32i	a9, a1, 144
+ 29f:	ee6a      	add.n	a14, a14, a6
+ 2a1:	f1f8      	l32i.n	a15, a1, 60
+ 2a3:	1821b2        	l32i	a11, a1, 96
+ 2a6:	1021d2        	l32i	a13, a1, 64
+ 2a9:	445a      	add.n	a4, a4, a5
+ 2ab:	07ae27        	bge	a14, a2, 2b6 <esp_nn_conv_s8_1x1$isra$0+0x2b6>	2ab: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_1x1$isra$0+0x2b6
+ 2ae:	dcff56        	bnez	a15, 81 <esp_nn_conv_s8_1x1$isra$0+0x81>	2ae: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_1x1$isra$0+0x81
+ 2b1:	067d      	mov.n	a7, a6
+ 2b3:	ffefc6        	j	276 <esp_nn_conv_s8_1x1$isra$0+0x276>	2b3: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_1x1$isra$0+0x276
+ 2b6:	f01d      	retw.n
+
+Disassembly of section .text.esp_nn_get_conv_scratch_size_opt:
+
+00000000 <esp_nn_get_conv_scratch_size_opt>:
+   0:	004136        	entry	a1, 32
+   3:	020c      	movi.n	a2, 0
+   5:	f01d      	retw.n
+
+Disassembly of section .text.esp_nn_set_conv_scratch_buf_opt:
+
+00000000 <esp_nn_set_conv_scratch_buf_opt>:
+   0:	004136        	entry	a1, 32
+   3:	f01d      	retw.n
+
+Disassembly of section .text.esp_nn_conv_s8_opt:
+
+00000000 <esp_nn_conv_s8_opt>:
+   0:	020136        	entry	a1, 0x100
+   3:	22b8      	l32i.n	a11, a2, 8
+   5:	2498      	l32i.n	a9, a4, 8
+   7:	136132        	s32i	a3, a1, 76
+   a:	146152        	s32i	a5, a1, 80
+   d:	156162        	s32i	a6, a1, 84
+  10:	02ad      	mov.n	a10, a2
+  12:	412182        	l32i	a8, a1, 0x104
+  15:	402122        	l32i	a2, a1, 0x100
+  18:	07fd      	mov.n	a15, a7
+  1a:	20c440        	or	a12, a4, a4
+  1d:	1d1b97        	beq	a11, a9, 3e <esp_nn_conv_s8_opt+0x3e>	1d: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x3e
+  20:	422192        	l32i	a9, a1, 0x108
+  23:	1521e2        	l32i	a14, a1, 84
+  26:	1421d2        	l32i	a13, a1, 80
+  29:	1321b2        	l32i	a11, a1, 76
+  2c:	2199      	s32i.n	a9, a1, 8
+  2e:	1189      	s32i.n	a8, a1, 4
+  30:	0129      	s32i.n	a2, a1, 0
+  32:	000081        	l32r	a8, fffc0034 <esp_nn_conv_s8_opt+0xfffc0034>	32: R_XTENSA_SLOT0_OP	.literal.esp_nn_conv_s8_opt+0x10
+	32: R_XTENSA_ASM_EXPAND	esp_nn_conv_s8_ansi
+  35:	0008e0        	callx8	a8
+  38:	011d06        	j	4b0 <esp_nn_conv_s8_opt+0x4b0>	38: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x4b0
+  3b:	00          	.byte	00
+  3c:	00          	.byte	00
+  3d:	00          	.byte	00
+  3e:	04e8      	l32i.n	a14, a4, 0
+  40:	14d8      	l32i.n	a13, a4, 4
+  42:	f470e0        	extui	a7, a14, 0, 16
+  45:	231766        	bnei	a7, 1, 6c <esp_nn_conv_s8_opt+0x6c>	45: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x6c
+  48:	f470d0        	extui	a7, a13, 0, 16
+  4b:	1d1766        	bnei	a7, 1, 6c <esp_nn_conv_s8_opt+0x6c>	4b: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x6c
+  4e:	422192        	l32i	a9, a1, 0x108
+  51:	0aa8      	l32i.n	a10, a10, 0
+  53:	1521e2        	l32i	a14, a1, 84
+  56:	1421d2        	l32i	a13, a1, 80
+  59:	1321c2        	l32i	a12, a1, 76
+  5c:	2199      	s32i.n	a9, a1, 8
+  5e:	1189      	s32i.n	a8, a1, 4
+  60:	0129      	s32i.n	a2, a1, 0
+  62:	000081        	l32r	a8, fffc0064 <esp_nn_conv_s8_opt+0xfffc0064>	62: R_XTENSA_SLOT0_OP	.literal.esp_nn_conv_s8_opt+0x14
+	62: R_XTENSA_ASM_EXPAND	.text.esp_nn_conv_s8_1x1$isra$0
+  65:	0008e0        	callx8	a8
+  68:	011106        	j	4b0 <esp_nn_conv_s8_opt+0x4b0>	68: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x4b0
+  6b:	00          	.byte	00
+  6c:	f440b0        	extui	a4, a11, 0, 16
+  6f:	ad9947        	bne	a9, a4, 20 <esp_nn_conv_s8_opt+0x20>	6f: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x20
+  72:	021f72        	l16ui	a7, a15, 4
+  75:	437716        	beqz	a7, 4b0 <esp_nn_conv_s8_opt+0x4b0>	75: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x4b0
+  78:	001a52        	l16ui	a5, a10, 0
+  7b:	1aa8      	l32i.n	a10, a10, 4
+  7d:	0838      	l32i.n	a3, a8, 0
+  7f:	1961a2        	s32i	a10, a1, 100
+  82:	18a8      	l32i.n	a10, a8, 4
+  84:	f4e0e0        	extui	a14, a14, 0, 16
+  87:	1f61a2        	s32i	a10, a1, 124
+  8a:	48a8      	l32i.n	a10, a8, 16
+  8c:	f460d0        	extui	a6, a13, 0, 16
+  8f:	1a61a2        	s32i	a10, a1, 104
+  92:	58a8      	l32i.n	a10, a8, 20
+  94:	c1d6e0        	mul16u	a13, a6, a14
+  97:	1b61a2        	s32i	a10, a1, 108
+  9a:	28a8      	l32i.n	a10, a8, 8
+  9c:	d4b2b0        	extui	a11, a11, 2, 14
+  9f:	1c61a2        	s32i	a10, a1, 112
+  a2:	38a8      	l32i.n	a10, a8, 12
+  a4:	11bbe0        	slli	a11, a11, 2
+  a7:	1d61a2        	s32i	a10, a1, 116
+  aa:	2fa8      	l32i.n	a10, a15, 8
+  ac:	fcc4c2        	addi	a12, a4, -4
+  af:	1e61a2        	s32i	a10, a1, 120
+  b2:	88a8      	l32i.n	a10, a8, 32
+  b4:	9888      	l32i.n	a8, a8, 36
+  b6:	c97c      	movi.n	a9, -4
+  b8:	216182        	s32i	a8, a1, 132
+  bb:	001f82        	l16ui	a8, a15, 0
+  be:	109c90        	and	a9, a12, a9
+  c1:	126182        	s32i	a8, a1, 72
+  c4:	828d40        	mull	a8, a13, a4
+  c7:	994b      	addi.n	a9, a9, 4
+  c9:	286182        	s32i	a8, a1, 160
+  cc:	c18540        	mul16u	a8, a5, a4
+  cf:	176152        	s32i	a5, a1, 92
+  d2:	106182        	s32i	a8, a1, 64
+  d5:	c184e0        	mul16u	a8, a4, a14
+  d8:	1661e2        	s32i	a14, a1, 88
+  db:	f189      	s32i.n	a8, a1, 60
+  dd:	180c      	movi.n	a8, 1
+  df:	838bb0        	moveqz	a8, a11, a11
+  e2:	9189      	s32i.n	a8, a1, 36
+  e4:	480c      	movi.n	a8, 4
+  e6:	9389b0        	movnez	a8, a9, a11
+  e9:	085d      	mov.n	a5, a8
+  eb:	080c      	movi.n	a8, 0
+  ed:	07ed      	mov.n	a14, a7
+  ef:	2761c2        	s32i	a12, a1, 156
+  f2:	057d      	mov.n	a7, a5
+  f4:	81b9      	s32i.n	a11, a1, 32
+  f6:	2061a2        	s32i	a10, a1, 128
+  f9:	2d6142        	s32i	a4, a1, 180
+  fc:	085d      	mov.n	a5, a8
+  fe:	02fd      	mov.n	a15, a2
+ 100:	00e306        	j	490 <esp_nn_conv_s8_opt+0x490>	100: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x490
+ 103:	00          	.byte	00
+ 104:	1d2182        	l32i	a8, a1, 116
+ 107:	1b2192        	l32i	a9, a1, 108
+ 10a:	c18850        	mul16u	a8, a8, a5
+ 10d:	f4a090        	extui	a10, a9, 0, 16
+ 110:	c09a80        	sub	a9, a10, a8
+ 113:	0b0c      	movi.n	a11, 0
+ 115:	53c9b0        	max	a12, a9, a11
+ 118:	c0ba80        	sub	a11, a10, a8
+ 11b:	192192        	l32i	a9, a1, 100
+ 11e:	c088a0        	sub	a8, a8, a10
+ 121:	1721a2        	l32i	a10, a1, 92
+ 124:	88ca      	add.n	a8, a8, a12
+ 126:	82d8a0        	mull	a13, a8, a10
+ 129:	f49090        	extui	a9, a9, 0, 16
+ 12c:	162182        	l32i	a8, a1, 88
+ 12f:	99ba      	add.n	a9, a9, a11
+ 131:	2461c2        	s32i	a12, a1, 144
+ 134:	82cc80        	mull	a12, a12, a8
+ 137:	438960        	min	a8, a9, a6
+ 13a:	e189      	s32i.n	a8, a1, 56
+ 13c:	1c2182        	l32i	a8, a1, 112
+ 13f:	032d      	mov.n	a2, a3
+ 141:	f4b080        	extui	a11, a8, 0, 16
+ 144:	1a2182        	l32i	a8, a1, 104
+ 147:	2f61e2        	s32i	a14, a1, 188
+ 14a:	f48080        	extui	a8, a8, 0, 16
+ 14d:	2a6182        	s32i	a8, a1, 168
+ 150:	2d2182        	l32i	a8, a1, 180
+ 153:	073d      	mov.n	a3, a7
+ 155:	fdc892        	addi	a9, a8, -3
+ 158:	2b6192        	s32i	a9, a1, 172
+ 15b:	272192        	l32i	a9, a1, 156
+ 15e:	0a0c      	movi.n	a10, 0
+ 160:	419290        	srli	a9, a9, 2
+ 163:	2c6192        	s32i	a9, a1, 176
+ 166:	2e6162        	s32i	a6, a1, 184
+ 169:	0ced      	mov.n	a14, a12
+ 16b:	306152        	s32i	a5, a1, 192
+ 16e:	3161d2        	s32i	a13, a1, 196
+ 171:	087d      	mov.n	a7, a8
+ 173:	000446        	j	188 <esp_nn_conv_s8_opt+0x188>	173: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x188
+ 176:	c91b      	addi.n	a12, a9, 1
+ 178:	992b      	addi.n	a9, a9, 2
+ 17a:	022ca7        	blt	a12, a10, 180 <esp_nn_conv_s8_opt+0x180>	17a: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x180
+ 17d:	00bcc6        	j	474 <esp_nn_conv_s8_opt+0x474>	17d: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x474
+ 180:	f229a7        	blt	a9, a10, 176 <esp_nn_conv_s8_opt+0x176>	180: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x176
+ 183:	00bb46        	j	474 <esp_nn_conv_s8_opt+0x474>	183: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x474
+ 186:	00          	.byte	00
+ 187:	00          	.byte	00
+ 188:	2a2192        	l32i	a9, a1, 168
+ 18b:	828ba0        	mull	a8, a11, a10
+ 18e:	4221c2        	l32i	a12, a1, 0x108
+ 191:	0f5d      	mov.n	a5, a15
+ 193:	0cc8      	l32i.n	a12, a12, 0
+ 195:	c0f890        	sub	a15, a8, a9
+ 198:	c08980        	sub	a8, a9, a8
+ 19b:	090c      	movi.n	a9, 0
+ 19d:	539890        	max	a9, a8, a9
+ 1a0:	312182        	l32i	a8, a1, 196
+ 1a3:	2261c2        	s32i	a12, a1, 136
+ 1a6:	4221c2        	l32i	a12, a1, 0x108
+ 1a9:	8f8a      	add.n	a8, a15, a8
+ 1ab:	889a      	add.n	a8, a8, a9
+ 1ad:	1cc8      	l32i.n	a12, a12, 4
+ 1af:	824870        	mull	a4, a8, a7
+ 1b2:	172182        	l32i	a8, a1, 92
+ 1b5:	2361c2        	s32i	a12, a1, 140
+ 1b8:	1621c2        	l32i	a12, a1, 88
+ 1bb:	c088f0        	sub	a8, a8, a15
+ 1be:	43c8c0        	min	a12, a8, a12
+ 1c1:	182182        	l32i	a8, a1, 96
+ 1c4:	c199      	s32i.n	a9, a1, 48
+ 1c6:	858a      	add.n	a8, a5, a8
+ 1c8:	296182        	s32i	a8, a1, 164
+ 1cb:	132182        	l32i	a8, a1, 76
+ 1ce:	9e9a      	add.n	a9, a14, a9
+ 1d0:	884a      	add.n	a8, a8, a4
+ 1d2:	829970        	mull	a9, a9, a7
+ 1d5:	266182        	s32i	a8, a1, 152
+ 1d8:	142182        	l32i	a8, a1, 80
+ 1db:	0d0c      	movi.n	a13, 0
+ 1dd:	889a      	add.n	a8, a8, a9
+ 1df:	256182        	s32i	a8, a1, 148
+ 1e2:	2c2182        	l32i	a8, a1, 176
+ 1e5:	2b2162        	l32i	a6, a1, 172
+ 1e8:	1161d2        	s32i	a13, a1, 68
+ 1eb:	0d4d      	mov.n	a4, a13
+ 1ed:	51c9      	s32i.n	a12, a1, 20
+ 1ef:	3261e2        	s32i	a14, a1, 200
+ 1f2:	3361a2        	s32i	a10, a1, 204
+ 1f5:	039d      	mov.n	a9, a3
+ 1f7:	3461b2        	s32i	a11, a1, 208
+ 1fa:	6189      	s32i.n	a8, a1, 24
+ 1fc:	242182        	l32i	a8, a1, 144
+ 1ff:	e1a8      	l32i.n	a10, a1, 56
+ 201:	0228a7        	blt	a8, a10, 207 <esp_nn_conv_s8_opt+0x207>	201: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x207
+ 204:	005a06        	j	370 <esp_nn_conv_s8_opt+0x370>	204: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x370
+ 207:	2521a2        	l32i	a10, a1, 148
+ 20a:	1121b2        	l32i	a11, a1, 68
+ 20d:	d189      	s32i.n	a8, a1, 52
+ 20f:	aaba      	add.n	a10, a10, a11
+ 211:	a1a9      	s32i.n	a10, a1, 40
+ 213:	2621a2        	l32i	a10, a1, 152
+ 216:	51c8      	l32i.n	a12, a1, 20
+ 218:	61d8      	l32i.n	a13, a1, 24
+ 21a:	b1a9      	s32i.n	a10, a1, 44
+ 21c:	080c      	movi.n	a8, 0
+ 21e:	356142        	s32i	a4, a1, 212
+ 221:	366152        	s32i	a5, a1, 216
+ 224:	004f46        	j	365 <esp_nn_conv_s8_opt+0x365>	224: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x365
+ 227:	00          	.byte	00
+ 228:	81a8      	l32i.n	a10, a1, 32
+ 22a:	7a8c      	beqz.n	a10, 235 <esp_nn_conv_s8_opt+0x235>	22a: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x235
+ 22c:	b158      	l32i.n	a5, a1, 44
+ 22e:	a148      	l32i.n	a4, a1, 40
+ 230:	c138      	l32i.n	a3, a1, 48
+ 232:	000886        	j	258 <esp_nn_conv_s8_opt+0x258>	232: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x258
+ 235:	c138      	l32i.n	a3, a1, 48
+ 237:	03ad      	mov.n	a10, a3
+ 239:	b78c      	beqz.n	a7, 248 <esp_nn_conv_s8_opt+0x248>	239: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x248
+ 23b:	b158      	l32i.n	a5, a1, 44
+ 23d:	a148      	l32i.n	a4, a1, 40
+ 23f:	05bd      	mov.n	a11, a5
+ 241:	04ed      	mov.n	a14, a4
+ 243:	0a0c      	movi.n	a10, 0
+ 245:	002986        	j	2ef <esp_nn_conv_s8_opt+0x2ef>	245: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x2ef
+ 248:	ba1b      	addi.n	a11, a10, 1
+ 24a:	aa2b      	addi.n	a10, a10, 2
+ 24c:	029bc7        	bne	a11, a12, 252 <esp_nn_conv_s8_opt+0x252>	24c: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x252
+ 24f:	003d86        	j	349 <esp_nn_conv_s8_opt+0x349>	24f: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x349
+ 252:	f29ca7        	bne	a12, a10, 248 <esp_nn_conv_s8_opt+0x248>	252: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x248
+ 255:	003c06        	j	349 <esp_nn_conv_s8_opt+0x349>	255: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x349
+ 258:	03bd      	mov.n	a11, a3
+ 25a:	71c9      	s32i.n	a12, a1, 28
+ 25c:	093d      	mov.n	a3, a9
+ 25e:	4159      	s32i.n	a5, a1, 16
+ 260:	5149      	s32i.n	a4, a1, 20
+ 262:	6179      	s32i.n	a7, a1, 24
+ 264:	0d9d      	mov.n	a9, a13
+ 266:	f60b      	addi.n	a15, a6, -1
+ 268:	41f2f0        	srli	a15, a15, 2
+ 26b:	a63b      	addi.n	a10, a6, 3
+ 26d:	51d8      	l32i.n	a13, a1, 20
+ 26f:	41e8      	l32i.n	a14, a1, 16
+ 271:	ff1b      	addi.n	a15, a15, 1
+ 273:	024ae6        	bgei	a10, 4, 279 <esp_nn_conv_s8_opt+0x279>	273: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x279
+ 276:	01a0f2        	movi	a15, 1
+ 279:	4f8f76        	loop	a15, 2cc <esp_nn_conv_s8_opt+0x2cc>	279: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x2cc
+ 27c:	000e52        	l8ui	a5, a14, 0
+ 27f:	000da2        	l8ui	a10, a13, 0
+ 282:	235500        	sext	a5, a5, 7
+ 285:	010e72        	l8ui	a7, a14, 1
+ 288:	23aa00        	sext	a10, a10, 7
+ 28b:	552a      	add.n	a5, a5, a2
+ 28d:	8255a0        	mull	a5, a5, a10
+ 290:	010da2        	l8ui	a10, a13, 1
+ 293:	237700        	sext	a7, a7, 7
+ 296:	020e42        	l8ui	a4, a14, 2
+ 299:	23aa00        	sext	a10, a10, 7
+ 29c:	772a      	add.n	a7, a7, a2
+ 29e:	030ec2        	l8ui	a12, a14, 3
+ 2a1:	8277a0        	mull	a7, a7, a10
+ 2a4:	020da2        	l8ui	a10, a13, 2
+ 2a7:	858a      	add.n	a8, a5, a8
+ 2a9:	234400        	sext	a4, a4, 7
+ 2ac:	030d52        	l8ui	a5, a13, 3
+ 2af:	442a      	add.n	a4, a4, a2
+ 2b1:	23aa00        	sext	a10, a10, 7
+ 2b4:	23cc00        	sext	a12, a12, 7
+ 2b7:	82a4a0        	mull	a10, a4, a10
+ 2ba:	cc2a      	add.n	a12, a12, a2
+ 2bc:	235500        	sext	a5, a5, 7
+ 2bf:	778a      	add.n	a7, a7, a8
+ 2c1:	82cc50        	mull	a12, a12, a5
+ 2c4:	aa7a      	add.n	a10, a10, a7
+ 2c6:	8caa      	add.n	a8, a12, a10
+ 2c8:	ee4b      	addi.n	a14, a14, 4
+ 2ca:	dd4b      	addi.n	a13, a13, 4
+ 2cc:	6178      	l32i.n	a7, a1, 24
+ 2ce:	57a377        	bge	a3, a7, 329 <esp_nn_conv_s8_opt+0x329>	2ce: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x329
+ 2d1:	91a8      	l32i.n	a10, a1, 36
+ 2d3:	09dd      	mov.n	a13, a9
+ 2d5:	0e0c      	movi.n	a14, 0
+ 2d7:	039d      	mov.n	a9, a3
+ 2d9:	0b3d      	mov.n	a3, a11
+ 2db:	11bde0        	slli	a11, a13, 2
+ 2de:	83bea0        	moveqz	a11, a14, a10
+ 2e1:	4158      	l32i.n	a5, a1, 16
+ 2e3:	5148      	l32i.n	a4, a1, 20
+ 2e5:	bb4b      	addi.n	a11, a11, 4
+ 2e7:	71c8      	l32i.n	a12, a1, 28
+ 2e9:	eb4a      	add.n	a14, a11, a4
+ 2eb:	09ad      	mov.n	a10, a9
+ 2ed:	bb5a      	add.n	a11, a11, a5
+ 2ef:	80fb70        	add	a15, a11, a7
+ 2f2:	c0afa0        	sub	a10, a15, a10
+ 2f5:	0461c2        	s32i	a12, a1, 16
+ 2f8:	000bc2        	l8ui	a12, a11, 0
+ 2fb:	000ef2        	l8ui	a15, a14, 0
+ 2fe:	23cc00        	sext	a12, a12, 7
+ 301:	cc2a      	add.n	a12, a12, a2
+ 303:	23ff00        	sext	a15, a15, 7
+ 306:	82ccf0        	mull	a12, a12, a15
+ 309:	bb1b      	addi.n	a11, a11, 1
+ 30b:	88ca      	add.n	a8, a8, a12
+ 30d:	ee1b      	addi.n	a14, a14, 1
+ 30f:	e59ab7        	bne	a10, a11, 2f8 <esp_nn_conv_s8_opt+0x2f8>	30f: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x2f8
+ 312:	41c8      	l32i.n	a12, a1, 16
+ 314:	331b      	addi.n	a3, a3, 1
+ 316:	2f1c37        	beq	a12, a3, 349 <esp_nn_conv_s8_opt+0x349>	316: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x349
+ 319:	81a8      	l32i.n	a10, a1, 32
+ 31b:	557a      	add.n	a5, a5, a7
+ 31d:	447a      	add.n	a4, a4, a7
+ 31f:	05bd      	mov.n	a11, a5
+ 321:	04ed      	mov.n	a14, a4
+ 323:	f31a56        	bnez	a10, 258 <esp_nn_conv_s8_opt+0x258>	323: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x258
+ 326:	fff146        	j	2ef <esp_nn_conv_s8_opt+0x2ef>	326: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x2ef
+ 329:	41c8      	l32i.n	a12, a1, 16
+ 32b:	61a8      	l32i.n	a10, a1, 24
+ 32d:	bb1b      	addi.n	a11, a11, 1
+ 32f:	ccaa      	add.n	a12, a12, a10
+ 331:	41c9      	s32i.n	a12, a1, 16
+ 333:	51c8      	l32i.n	a12, a1, 20
+ 335:	acaa      	add.n	a10, a12, a10
+ 337:	51a9      	s32i.n	a10, a1, 20
+ 339:	71a8      	l32i.n	a10, a1, 28
+ 33b:	021ba7        	beq	a11, a10, 341 <esp_nn_conv_s8_opt+0x341>	33b: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x341
+ 33e:	ffc906        	j	266 <esp_nn_conv_s8_opt+0x266>	33e: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x266
+ 341:	6178      	l32i.n	a7, a1, 24
+ 343:	09dd      	mov.n	a13, a9
+ 345:	0bcd      	mov.n	a12, a11
+ 347:	039d      	mov.n	a9, a3
+ 349:	b1b8      	l32i.n	a11, a1, 44
+ 34b:	1021e2        	l32i	a14, a1, 64
+ 34e:	d1a8      	l32i.n	a10, a1, 52
+ 350:	bbea      	add.n	a11, a11, a14
+ 352:	b1b9      	s32i.n	a11, a1, 44
+ 354:	f1e8      	l32i.n	a14, a1, 60
+ 356:	a1b8      	l32i.n	a11, a1, 40
+ 358:	aa1b      	addi.n	a10, a10, 1
+ 35a:	bbea      	add.n	a11, a11, a14
+ 35c:	a1b9      	s32i.n	a11, a1, 40
+ 35e:	e1b8      	l32i.n	a11, a1, 56
+ 360:	d1a9      	s32i.n	a10, a1, 52
+ 362:	0f1ba7        	beq	a11, a10, 375 <esp_nn_conv_s8_opt+0x375>	362: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x375
+ 365:	c1a8      	l32i.n	a10, a1, 48
+ 367:	02aac7        	bge	a10, a12, 36d <esp_nn_conv_s8_opt+0x36d>	367: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x36d
+ 36a:	ffae86        	j	228 <esp_nn_conv_s8_opt+0x228>	36a: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x228
+ 36d:	fff606        	j	349 <esp_nn_conv_s8_opt+0x349>	36d: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x349
+ 370:	080c      	movi.n	a8, 0
+ 372:	000246        	j	37f <esp_nn_conv_s8_opt+0x37f>	372: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x37f
+ 375:	352142        	l32i	a4, a1, 212
+ 378:	362152        	l32i	a5, a1, 216
+ 37b:	51c9      	s32i.n	a12, a1, 20
+ 37d:	61d9      	s32i.n	a13, a1, 24
+ 37f:	1521a2        	l32i	a10, a1, 84
+ 382:	6a8c      	beqz.n	a10, 38c <esp_nn_conv_s8_opt+0x38c>	382: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x38c
+ 384:	80aa40        	add	a10, a10, a4
+ 387:	0aa8      	l32i.n	a10, a10, 0
+ 389:	8088a0        	add	a8, a8, a10
+ 38c:	2221a2        	l32i	a10, a1, 136
+ 38f:	0000d1        	l32r	a13, fffc0390 <esp_nn_conv_s8_opt+0xfffc0390>	38f: R_XTENSA_SLOT0_OP	.literal.esp_nn_conv_s8_opt+0x4
+ 392:	aa4a      	add.n	a10, a10, a4
+ 394:	0af8      	l32i.n	a15, a10, 0
+ 396:	2321a2        	l32i	a10, a1, 140
+ 399:	130c      	movi.n	a3, 1
+ 39b:	aa4a      	add.n	a10, a10, a4
+ 39d:	0ae8      	l32i.n	a14, a10, 0
+ 39f:	0a0c      	movi.n	a10, 0
+ 3a1:	53afa0        	max	a10, a15, a10
+ 3a4:	401a00        	ssl	a10
+ 3a7:	a1b800        	sll	a11, a8
+ 3aa:	c08eb0        	sub	a8, a14, a11
+ 3ad:	0c0c      	movi.n	a12, 0
+ 3af:	83c380        	moveqz	a12, a3, a8
+ 3b2:	c0abd0        	sub	a10, a11, a13
+ 3b5:	080c      	movi.n	a8, 0
+ 3b7:	8383a0        	moveqz	a8, a3, a10
+ 3ba:	6030f0        	neg	a3, a15
+ 3bd:	0000f1        	l32r	a15, fffc03c0 <esp_nn_conv_s8_opt+0xfffc03c0>	3bd: R_XTENSA_SLOT0_OP	.literal.esp_nn_conv_s8_opt+0x8
+ 3c0:	108c80        	and	a8, a12, a8
+ 3c3:	41f9      	s32i.n	a15, a1, 16
+ 3c5:	0c0c      	movi.n	a12, 0
+ 3c7:	0000d1        	l32r	a13, fffc03c8 <esp_nn_conv_s8_opt+0xfffc03c8>	3c7: R_XTENSA_SLOT0_OP	.literal.esp_nn_conv_s8_opt+0xc
+ 3ca:	5333c0        	max	a3, a3, a12
+ 3cd:	41c8      	l32i.n	a12, a1, 16
+ 3cf:	30aeb0        	xor	a10, a14, a11
+ 3d2:	b3cda0        	movgez	a12, a13, a10
+ 3d5:	41c9      	s32i.n	a12, a1, 16
+ 3d7:	fd7c      	movi.n	a13, -1
+ 3d9:	0c0c      	movi.n	a12, 0
+ 3db:	0000f1        	l32r	a15, fffc03dc <esp_nn_conv_s8_opt+0xfffc03dc>	3db: R_XTENSA_SLOT0_OP	.literal.esp_nn_conv_s8_opt
+ 3de:	b3dca0        	movgez	a13, a12, a10
+ 3e1:	58ec      	bnez.n	a8, 40a <esp_nn_conv_s8_opt+0x40a>	3e1: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x40a
+ 3e3:	82abe0        	mull	a10, a11, a14
+ 3e6:	41c8      	l32i.n	a12, a1, 16
+ 3e8:	b28be0        	mulsh	a8, a11, a14
+ 3eb:	baca      	add.n	a11, a10, a12
+ 3ed:	88da      	add.n	a8, a8, a13
+ 3ef:	02bba7        	bgeu	a11, a10, 3f5 <esp_nn_conv_s8_opt+0x3f5>	3ef: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x3f5
+ 3f2:	01c882        	addi	a8, a8, 1
+ 3f5:	31af80        	srai	a10, a8, 31
+ 3f8:	aaaa      	add.n	a10, a10, a10
+ 3fa:	41a1a0        	srli	a10, a10, 1
+ 3fd:	baba      	add.n	a11, a10, a11
+ 3ff:	01bba7        	bgeu	a11, a10, 404 <esp_nn_conv_s8_opt+0x404>	3ff: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x404
+ 402:	881b      	addi.n	a8, a8, 1
+ 404:	404f10        	ssai	31
+ 407:	81f8b0        	src	a15, a8, a11
+ 40a:	180c      	movi.n	a8, 1
+ 40c:	401300        	ssl	a3
+ 40f:	a1a800        	sll	a10, a8
+ 412:	aa0b      	addi.n	a10, a10, -1
+ 414:	400800        	ssr	a8
+ 417:	b180a0        	sra	a8, a10
+ 41a:	05bff0        	extui	a11, a15, 31, 1
+ 41d:	b8ba      	add.n	a11, a8, a11
+ 41f:	10aaf0        	and	a10, a10, a15
+ 422:	400300        	ssr	a3
+ 425:	b180f0        	sra	a8, a15
+ 428:	01aba7        	bge	a11, a10, 42d <esp_nn_conv_s8_opt+0x42d>	428: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x42d
+ 42b:	881b      	addi.n	a8, a8, 1
+ 42d:	1f21a2        	l32i	a10, a1, 124
+ 430:	444b      	addi.n	a4, a4, 4
+ 432:	8a8a      	add.n	a8, a10, a8
+ 434:	2021a2        	l32i	a10, a1, 128
+ 437:	5388a0        	max	a8, a8, a10
+ 43a:	2121a2        	l32i	a10, a1, 132
+ 43d:	4388a0        	min	a8, a8, a10
+ 440:	004582        	s8i	a8, a5, 0
+ 443:	2821a2        	l32i	a10, a1, 160
+ 446:	112182        	l32i	a8, a1, 68
+ 449:	551b      	addi.n	a5, a5, 1
+ 44b:	88aa      	add.n	a8, a8, a10
+ 44d:	116182        	s32i	a8, a1, 68
+ 450:	292182        	l32i	a8, a1, 164
+ 453:	021587        	beq	a5, a8, 459 <esp_nn_conv_s8_opt+0x459>	453: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x459
+ 456:	ff6886        	j	1fc <esp_nn_conv_s8_opt+0x1fc>	456: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x1fc
+ 459:	3321a2        	l32i	a10, a1, 204
+ 45c:	122182        	l32i	a8, a1, 72
+ 45f:	aa1b      	addi.n	a10, a10, 1
+ 461:	3221e2        	l32i	a14, a1, 200
+ 464:	3421b2        	l32i	a11, a1, 208
+ 467:	093d      	mov.n	a3, a9
+ 469:	05fd      	mov.n	a15, a5
+ 46b:	02aa87        	bge	a10, a8, 471 <esp_nn_conv_s8_opt+0x471>	46b: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x471
+ 46e:	ff4586        	j	188 <esp_nn_conv_s8_opt+0x188>	46e: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x188
+ 471:	000246        	j	47e <esp_nn_conv_s8_opt+0x47e>	471: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x47e
+ 474:	881b      	addi.n	a8, a8, 1
+ 476:	36a877        	bge	a8, a7, 4b0 <esp_nn_conv_s8_opt+0x4b0>	476: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x4b0
+ 479:	0b9d      	mov.n	a9, a11
+ 47b:	ff3dc6        	j	176 <esp_nn_conv_s8_opt+0x176>	47b: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x176
+ 47e:	302152        	l32i	a5, a1, 192
+ 481:	2f21e2        	l32i	a14, a1, 188
+ 484:	551b      	addi.n	a5, a5, 1
+ 486:	2e2162        	l32i	a6, a1, 184
+ 489:	097d      	mov.n	a7, a9
+ 48b:	023d      	mov.n	a3, a2
+ 48d:	1fa5e7        	bge	a5, a14, 4b0 <esp_nn_conv_s8_opt+0x4b0>	48d: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x4b0
+ 490:	122182        	l32i	a8, a1, 72
+ 493:	989c      	beqz.n	a8, 4b0 <esp_nn_conv_s8_opt+0x4b0>	493: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x4b0
+ 495:	1e2182        	l32i	a8, a1, 120
+ 498:	f48080        	extui	a8, a8, 0, 16
+ 49b:	186182        	s32i	a8, a1, 96
+ 49e:	089d      	mov.n	a9, a8
+ 4a0:	c60856        	bnez	a8, 104 <esp_nn_conv_s8_opt+0x104>	4a0: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x104
+ 4a3:	1221a2        	l32i	a10, a1, 72
+ 4a6:	0e7d      	mov.n	a7, a14
+ 4a8:	058d      	mov.n	a8, a5
+ 4aa:	09bd      	mov.n	a11, a9
+ 4ac:	ff3186        	j	176 <esp_nn_conv_s8_opt+0x176>	4ac: R_XTENSA_SLOT0_OP	.text.esp_nn_conv_s8_opt+0x176
+ 4af:	00          	.byte	00
+ 4b0:	f01d      	retw.n

@@ -1,0 +1,12 @@
+{
+  "training/artifacts/best_model.keras": "2f430ac32609ef7d4cda413d66477d3d4c55a709d8abc456b4d7001a04313adb",
+  "training/artifacts/calibration_indices.npy": "a4b5233a34d97e05cab86935310023b751778972c8a845ad1c0f70cc3195fd17",
+  "training/artifacts/cnn_fp32.tflite": "5b9d44350efcd46b4a257acf06e34ff06b222537ca9c67c0ee129a8caf4d1a3c",
+  "training/artifacts/cnn_int8.tflite": "2ec2dcccd35f36522a39683c2c17e20cb24c3b35bab8f9dfd112268fed68954a",
+  "training/artifacts/conversion_report.json": "05b7f4be643f009f17d0bdeddb7c9a62b535540a30673da0b926d49e06082d11",
+  "training/artifacts/split_indices.npz": "258267c1e7473697bf72dc16d6dd5e61e8ce36781ef4c2df93f839be7404752c",
+  "training/artifacts/test_reference.npz": "baa26280b3e214cfc4fdad215d8a5e17a316a76ec21361b42440360bb303d35f",
+  "training/artifacts/tflite_test_reference.npz": "7af195778e68057c2e51f48e8f298518319d4d031b41913f686756b68aabe93d",
+  "training/artifacts/training_history.csv": "bf2a12610f87abb57c0709faace4c930d93a3c7b761fe4ae07fe55c66fb89476",
+  "training/artifacts/training_report.json": "aaa716461395da11ef68e1e8343be87cff44d1b7fd07d49a926ddb3259062362"
+}

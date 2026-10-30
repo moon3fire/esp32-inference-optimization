@@ -1,0 +1,30 @@
+{
+  "tensorflow": "2.20.0",
+  "calibration_images": 500,
+  "test_images": 10000,
+  "fp32_correct": 9861,
+  "int8_correct": 9858,
+  "fp32_vs_keras_changed_predictions": 0,
+  "fp32_vs_keras_max_score_error": 1.71661376953125e-05,
+  "int8_vs_fp32_changed_predictions": 16,
+  "fp32_file_bytes": 23576,
+  "int8_file_bytes": 8984,
+  "fp32_sha256": "5b9d44350efcd46b4a257acf06e34ff06b222537ca9c67c0ee129a8caf4d1a3c",
+  "int8_sha256": "2ec2dcccd35f36522a39683c2c17e20cb24c3b35bab8f9dfd112268fed68954a",
+  "quantization": {
+    "input_shape": [
+      1,
+      28,
+      28,
+      1
+    ],
+    "output_shape": [
+      1,
+      10
+    ],
+    "input_scale": 0.003921568859368563,
+    "input_zero_point": -128,
+    "output_scale": 0.2433352917432785,
+    "output_zero_point": 34
+  }
+}

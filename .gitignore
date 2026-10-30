@@ -1,0 +1,29 @@
+**/.venv/
+**/venv/
+**/__pycache__/
+*.pyc
+firmware/build*/
+firmware/managed_components/
+firmware/sdkconfig.old
+.DS_Store
+
+# Local editor settings
+.vscode/
+.idea/
+
+# Build outputs
+build/
+build-*/
+managed_components/
+sdkconfig.old
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# OS files
+.DS_Store
+Thumbs.db

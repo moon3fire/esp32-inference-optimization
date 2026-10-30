@@ -1,0 +1,4 @@
+# Versions reported by the original training run. Not a full transitive lock.
+tensorflow-cpu==2.20.0
+keras==3.15.1
+numpy==2.5.4

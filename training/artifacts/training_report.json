@@ -1,0 +1,15 @@
+{
+  "seed": 42,
+  "python": "3.12.16",
+  "tensorflow": "2.20.0",
+  "keras": "3.15.1",
+  "numpy": "2.5.4",
+  "training_images": 54001,
+  "validation_images": 5999,
+  "test_images": 10000,
+  "parameters": 5258,
+  "epochs_run": 20,
+  "best_epoch": 19,
+  "test_correct": 9861,
+  "test_accuracy": 0.9861
+}
